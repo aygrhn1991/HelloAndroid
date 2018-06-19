@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/layout_custom_dialog">
 
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="提示"
-        android:textColor="#FF5D13"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -19,7 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="删除？"
-        android:textColor="#FF5D13"
         android:textSize="20sp" />
 
     <View
@@ -33,7 +32,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/btn_confirm"
+            android:id="@+id/tv_confirm"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -46,7 +45,7 @@
             android:background="@color/colorBlack"></View>
 
         <TextView
-            android:id="@+id/btn_cancel"
+            android:id="@+id/tv_cancel"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
