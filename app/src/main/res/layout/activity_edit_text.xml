@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="#FFBB36"
+        android:hint="用户名"
+        android:drawableLeft="@drawable/ic_account_box_black_24dp"
+        android:drawablePadding="5dp"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_https_black_24dp"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="手机号"
+        android:inputType="number"
+        android:background="@drawable/style_edittext"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_perm_device_information_black_24dp"
+        android:maxLines="1"
+        />
+</LinearLayout>
