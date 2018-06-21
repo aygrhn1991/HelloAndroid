@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.fenglingtime.www.helloandroid.fragment.ContainerActivity;
 import com.fenglingtime.www.helloandroid.gridview.GridViewActivity;
 import com.fenglingtime.www.helloandroid.jump.AActivity;
 import com.fenglingtime.www.helloandroid.listview.ListViewActivity;
@@ -32,6 +33,7 @@ public class UiActivity extends AppCompatActivity {
     private Button mBtnTestView;
     private Button mBtnLifeCycleView;
     private Button mBtnJumpView;
+    private Button mBtnFragmentView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnTestView = (Button) findViewById(R.id.button17);
         mBtnLifeCycleView = (Button) findViewById(R.id.button18);
         mBtnJumpView = (Button) findViewById(R.id.button19);
+        mBtnFragmentView = (Button) findViewById(R.id.button20);
 
         OnClick onClick = new OnClick();
         mBtnTextView.setOnClickListener(onClick);
@@ -78,6 +81,7 @@ public class UiActivity extends AppCompatActivity {
         mBtnTestView.setOnClickListener(onClick);
         mBtnLifeCycleView.setOnClickListener(onClick);
         mBtnJumpView.setOnClickListener(onClick);
+        mBtnFragmentView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -142,6 +146,9 @@ public class UiActivity extends AppCompatActivity {
                     break;
                 case R.id.button19:
                     intent = new Intent(UiActivity.this, AActivity.class);
+                    break;
+                case R.id.button20:
+                    intent = new Intent(UiActivity.this, ContainerActivity.class);
                     break;
             }
             startActivity(intent);
