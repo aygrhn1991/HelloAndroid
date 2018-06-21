@@ -38,7 +38,19 @@
         </activity>
         <activity android:name=".ProgressActivity" />
         <activity android:name=".CustomDialogActivity" />
-        <activity android:name=".PopupWindowActivity"></activity>
+        <activity android:name=".PopupWindowActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".LifeCycleActivity" />
+        <activity android:name=".jump.AActivity"
+            android:label="A"/>
+        <activity android:name=".jump.BActivity"
+            android:label="B">
+            <intent-filter>
+                <action android:name="com.fl.jump.b" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

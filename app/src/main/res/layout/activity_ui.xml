@@ -100,11 +100,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CustomDialogView" />
+
         <Button
             android:id="@+id/button16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="PopupWindowView" />
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TestView" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LifeCycleView" />
+
+        <Button
+            android:id="@+id/button19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JumpView" />
     </LinearLayout>
 
 </ScrollView>

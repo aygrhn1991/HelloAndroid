@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.fenglingtime.www.helloandroid.gridview.GridViewActivity;
+import com.fenglingtime.www.helloandroid.jump.AActivity;
 import com.fenglingtime.www.helloandroid.listview.ListViewActivity;
 import com.fenglingtime.www.helloandroid.recyclerview.RecyclerViewActivity;
 
@@ -28,6 +29,9 @@ public class UiActivity extends AppCompatActivity {
     private Button mBtnProgressView;
     private Button mBtnCustomDialogView;
     private Button mBtnPopupWindowView;
+    private Button mBtnTestView;
+    private Button mBtnLifeCycleView;
+    private Button mBtnJumpView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,9 @@ public class UiActivity extends AppCompatActivity {
         mBtnProgressView = (Button) findViewById(R.id.button14);
         mBtnCustomDialogView = (Button) findViewById(R.id.button15);
         mBtnPopupWindowView = (Button) findViewById(R.id.button16);
+        mBtnTestView = (Button) findViewById(R.id.button17);
+        mBtnLifeCycleView = (Button) findViewById(R.id.button18);
+        mBtnJumpView = (Button) findViewById(R.id.button19);
 
         OnClick onClick = new OnClick();
         mBtnTextView.setOnClickListener(onClick);
@@ -68,6 +75,9 @@ public class UiActivity extends AppCompatActivity {
         mBtnProgressView.setOnClickListener(onClick);
         mBtnCustomDialogView.setOnClickListener(onClick);
         mBtnPopupWindowView.setOnClickListener(onClick);
+        mBtnTestView.setOnClickListener(onClick);
+        mBtnLifeCycleView.setOnClickListener(onClick);
+        mBtnJumpView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -123,6 +133,15 @@ public class UiActivity extends AppCompatActivity {
                     break;
                 case R.id.button16:
                     intent = new Intent(UiActivity.this, PopupWindowActivity.class);
+                    break;
+                case R.id.button17:
+                    intent = new Intent(UiActivity.this, TestActivity.class);
+                    break;
+                case R.id.button18:
+                    intent = new Intent(UiActivity.this, LifeCycleActivity.class);
+                    break;
+                case R.id.button19:
+                    intent = new Intent(UiActivity.this, AActivity.class);
                     break;
             }
             startActivity(intent);
