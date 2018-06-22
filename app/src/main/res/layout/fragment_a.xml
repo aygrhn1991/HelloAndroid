@@ -4,7 +4,21 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
-
+    <Button
+        android:id="@+id/btn_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activity传参" />
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="change" />
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更换文字" />
     <TextView
         android:id="@+id/tv_name1"
         android:layout_width="match_parent"
